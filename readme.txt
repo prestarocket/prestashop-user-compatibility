@@ -7,7 +7,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin will allow you to automatically rehash the passwords of users you have beforehand imported from a Prestashop database to your Wordpress database.
+This plugin will automatically rehash the passwords of users you have beforehand imported from a Prestashop database to your WP database.
 
 == Description ==
 
