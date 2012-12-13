@@ -1,4 +1,4 @@
-=== Prestashop Users Compat ===
+=== Prestashop User Compatibility ===
 Contributors: veganist, beaulebens
 Tags: prestashop, email, login, authentication, users, hash
 Requires at least: 2.8
@@ -25,8 +25,9 @@ Tested with Prestashop 1.3.5 and Wordpress 3.5.
 
 == Installation ==
 
-1. Unzip and upload `/prestashop-users-compat/` to the `/wp-content/plugins/` directory
+1. Unzip and upload `/prestashop-user-compatibility/` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Configure the COOKIE_KEY in the settings menu => Prestashop User Compat.
 
 == Frequently Asked Questions ==
 
