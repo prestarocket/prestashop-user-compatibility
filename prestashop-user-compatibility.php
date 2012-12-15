@@ -75,7 +75,7 @@ function prestashop_user_compat_page_callback() {
 	echo '<div class="wrap">';
 	screen_icon();
     echo '<h2>Options for Prestashop user compatibility</h2>';
- cho '<p>Enter here the value of the COOKIE_KEY, found in config/settings.inc.php of your former Prestashop installation.<br />This should look something like CtUKJZE31LzULMLcsspKhF2IrZpOShBe56B42vH15PMMt06WvEDUj5HX</p><form method="post" action="options.php">';
+	echo '<p>Enter here the value of the COOKIE_KEY, found in config/settings.inc.php of your former Prestashop installation.<br />This should look something like CtUKJZE31LzULMLcsspKhF2IrZpOShBe56B42vH15PMMt06WvEDUj5HX</p><form method="post" action="options.php">';
 	settings_fields( 'prestashop-user-compat-group' );
 	echo '<input type="text" name="ps-cookie-salt" value="'.get_option('ps-cookie-salt').'" style="width: 70%;" />';
 	submit_button();
