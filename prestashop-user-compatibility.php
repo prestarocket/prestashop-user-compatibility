@@ -35,7 +35,7 @@ function pw_rehash( $user, $username, $password ) {
 	global $wpdb;
 	require_once( ABSPATH . 'wp-includes/class-phpass.php');
 
-	// login via email or username. Props Beau Lebens
+	// login via email or username. code by Beau Lebens
 	$user = get_user_by( 'email', $username );
 	if ( isset( $user, $user->user_login, $user->user_status ) && 0 == (int) $user->user_status ) {
 		$username = $user->user_login;
@@ -43,14 +43,16 @@ function pw_rehash( $user, $username, $password ) {
 
 	// This is the hashing function of Prestashop 1.3.5 : $ps_hashed_pw = md5($ps_salt.$plaintext_pw);
 	$ps_salt = get_option('ps-cookie-salt');
-	$wp_hashed_pw = $user->user_pass; // password stored in WPDB
-	$plaintext_pw = $password;
-	$ps_hashed_pw = md5($ps_salt.$plaintext_pw);
+	if(!empty($ps_salt)) {
+		$wp_hashed_pw = $user->user_pass; // password stored in WPDB
+		$plaintext_pw = $password;
+		$ps_hashed_pw = md5($ps_salt.$plaintext_pw);
 
-	// this means that the user's password in the DB is an old Prestashop password
-	// if the password is correct, we rehash and update it
-	if($ps_hashed_pw == $user->user_pass) {
-		wp_set_password( $plaintext_pw, $user->id );
+		// this means that the user's password in the DB is an old Prestashop password
+		// if the password is correct, we rehash and update it
+		if($ps_hashed_pw == $user->user_pass) {
+			wp_set_password( $plaintext_pw, $user->id );
+		}
 	}
 
 	return wp_authenticate_username_password( null, $username, $password );
