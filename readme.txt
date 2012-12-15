@@ -33,7 +33,7 @@ Tested with Prestashop 1.3.5 and Wordpress 3.5.
 
 = Does the plugin import the user database of my Prestashop installation? =
 
-No. You will have to do this yourself manually.
+No. You will have to do this yourself manually. You may check the db-import.txt file for an example on how to do this.
 
 == Changelog ==
 
