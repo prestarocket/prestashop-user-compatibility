@@ -3,7 +3,7 @@ Contributors: veganist, beaulebens
 Tags: prestashop, email, login, authentication, users, hash
 Requires at least: 2.8
 Tested up to: 3.5
-Stable tag: trunk
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,12 +33,13 @@ Tested with Prestashop 1.3.5 and Wordpress 3.5.
 
 = Does the plugin import the user database of my Prestashop installation? =
 
-No. You will have to do this yourself manually. You may check the db-import.txt file for an example on how to do this.
+No. You will have to do this yourself manually.
+There is an example PHP file included to import the database into WP, please check db-import.txt in the plugin folder.
 
 == Changelog ==
 
 = 1.1 =
-Sanitize input
+Security update : sanitize option input
 
 = 1.0 =
 * Initial release
