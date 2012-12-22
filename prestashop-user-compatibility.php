@@ -83,6 +83,11 @@ function prestashop_user_compat_page_callback() {
 }
 
 function register_puc_settings() {
-	register_setting( 'prestashop-user-compat-group', 'ps-cookie-salt' );
+	register_setting( 'prestashop-user-compat-group', 'ps-cookie-salt', 'puc_sanitize' );
+}
+
+function puc_sanitize($input) {
+	$input = sanitize_text_field($input);
+	return $input;
 }
 ?>

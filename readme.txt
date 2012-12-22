@@ -37,5 +37,8 @@ No. You will have to do this yourself manually. You may check the db-import.txt 
 
 == Changelog ==
 
+= 1.1 =
+Sanitize input
+
 = 1.0 =
 * Initial release
