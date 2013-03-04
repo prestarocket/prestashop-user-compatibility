@@ -1,5 +1,5 @@
 === Prestashop User Compatibility ===
-Contributors: veganist, beaulebens
+Contributors: veganist
 Tags: prestashop, email, login, authentication, users, hash
 Requires at least: 2.8
 Tested up to: 3.5
