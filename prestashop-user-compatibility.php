@@ -4,7 +4,7 @@ Plugin Name: Prestashop user compatibility
 Plugin URI: http://curlybracket.net/plugz/puc
 Description: Prestashop user password rehasher
 Author: Ulrike Uhlig
-Version: 1.0
+Version: 1.1
 Author URI: http://curlybracket.net
 */
 
@@ -35,7 +35,7 @@ function pw_rehash( $user, $username, $password ) {
 	global $wpdb;
 	require_once( ABSPATH . 'wp-includes/class-phpass.php');
 
-	// login via email or username. code by Beau Lebens
+	// login via email or username. short piece of code from Beau Lebens' WP Email Login
 	$user = get_user_by( 'email', $username );
 	if ( isset( $user, $user->user_login, $user->user_status ) && 0 == (int) $user->user_status ) {
 		$username = $user->user_login;
