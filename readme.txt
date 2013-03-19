@@ -1,6 +1,6 @@
 === Prestashop User Compatibility ===
 Contributors: veganist
-Tags: prestashop, email, login, authentication, users, hash, migrate, prestashop, password
+Tags: prestashop, email, login, authentication, users, hash, migrate, password
 Requires at least: 2.8
 Tested up to: 3.5
 Stable tag: 1.1
