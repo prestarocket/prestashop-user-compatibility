@@ -1,6 +1,6 @@
 === Prestashop User Compatibility ===
 Contributors: veganist
-Tags: prestashop, email, login, authentication, users, hash
+Tags: prestashop, email, login, authentication, users, hash, migrate, prestashop, password
 Requires at least: 2.8
 Tested up to: 3.5
 Stable tag: 1.1
@@ -12,6 +12,8 @@ This plugin will automatically rehash the passwords of users you have beforehand
 == Description ==
 
 This plugin will allow you to automatically rehash the passwords of users you have beforehand imported from a Prestashop database to your Wordpress database.
+
+This is useful if you are migrating a website from Prestashop to Wordpress.
 
 It allows users to authenticate via their email address, like on a Prestashop installation.
 
