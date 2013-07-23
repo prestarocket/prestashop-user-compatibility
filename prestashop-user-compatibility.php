@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Prestashop user compatibility
-Plugin URI: http://curlybracket.net/plugz/puc
+Plugin URI: http://curlybracket.net/2012/12/28/prestashop-user-compatibility/
 Description: Prestashop user password rehasher
 Author: Ulrike Uhlig
 Version: 1.1
